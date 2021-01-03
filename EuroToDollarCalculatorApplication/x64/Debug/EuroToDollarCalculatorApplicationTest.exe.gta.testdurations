@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\JoachimWagner\source\repos\EuroToDollarCalculatorApplication\x64\Debug\EuroToDollarCalculatorApplicationTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="0" />
+    <TestDuration Test="Peter.TestName" Duration="0" />
+  </TestDurations>
+</GtaTestDurations>
