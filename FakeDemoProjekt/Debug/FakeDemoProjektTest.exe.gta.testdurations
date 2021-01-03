@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\JoachimWagner\source\repos\atlas\FakeDemoProjekt\Debug\FakeDemoProjektTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="myservice_using_dependency_test.TestName" Duration="1" />
+    <TestDuration Test="myservice_using_dependency_test.FirstMethod" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
