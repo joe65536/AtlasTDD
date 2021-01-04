@@ -2,9 +2,9 @@
 #include "schwein.h"
 #include <stdexcept>
 
-tiere::schwein::schwein(const std::string name) :name_(name), gewicht_(10)
+tiere::schwein::schwein(const std::string name) : gewicht_(10)
 {
-	
+	set_name_impl(name);
 }
 
 void tiere::schwein::fressen()
@@ -14,8 +14,7 @@ void tiere::schwein::fressen()
 
 void tiere::schwein::set_name(std::string name)
 {
-	if (name == "Elsa") throw std::invalid_argument("Name ist nicht erlaubt!");
-	this->name_ = name;
+	set_name_impl(std::move(name));
 }
 
 std::string tiere::schwein::get_name() const
@@ -37,4 +36,10 @@ std::ostream& tiere::operator<<(std::ostream& out, const schwein& schwein)
 	return out;
 	
 
+}
+
+void tiere::schwein::set_name_impl(std::string name)
+{
+	if (name == "Elsa") throw std::invalid_argument("Name ist nicht erlaubt!");
+	this->name_ = std::move(name);
 }

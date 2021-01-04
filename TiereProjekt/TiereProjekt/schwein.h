@@ -8,6 +8,7 @@ namespace tiere {
 	private:
 		std::string name_;
 		int gewicht_;
+		void set_name_impl(std::string name);
 
 	public:
 		schwein(const std::string name = "nobody") ;
